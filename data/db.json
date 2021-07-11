@@ -1,0 +1,214 @@
+{
+    "singers":[
+        {
+            "id": "s1",
+            "name": "Tamer Hosney",
+            "count": 50,
+            "price": 100
+        },
+        {
+            "id": "s2",
+            "name": "Mouiner",
+            "count": 60,
+            "price": 180
+        },
+        {
+            "id": "s3",
+            "name": "Adele",
+            "count": 40,
+            "price": 200
+        }
+    ],
+
+    "AlbumsInfo":[
+        {
+            "id":"a1",
+            "name": "Ana B7bk",
+            "singer_id": "s1",
+            "count": 12,
+            "price": 24
+        },
+        {
+            "id":"a2",
+            "name": "B7bk Ana Awy",
+            "singer_id": "s1",
+            "count": 10,
+            "price": 20
+        },
+        {
+            "id":"a3",
+            "name": "Fe 3shq Elbanat",
+            "singer_id": "s2",
+            "count": 15,
+            "price": 45
+        },
+        {
+            "id":"a4",
+            "name": "elneel",
+            "singer_id": "s2",
+            "count": 9,
+            "price": 27
+        },
+        {
+            "id":"a5",
+            "name": "luxor gammela",
+            "singer_id": "s2",
+            "count": 5,
+            "price": 15
+        },
+        {
+            "id":"a6",
+            "name": "million years ago",
+            "singer_id": "s3",
+            "count": 10,
+            "price": 50
+        },
+        {
+            "id":"a7",
+            "name": "Hello",
+            "singer_id": "s3",
+            "count": 11,
+            "price": 55
+        }
+    ],
+    "AlbumsSongs":[
+        {
+            "id":"a1",
+            "name":"Ana B7bk",
+            "songs":[
+                {
+                    "id":"so1",
+                    "name":"any haga 1 Tamer",
+                    "price":2
+                },
+                {
+                    "id":"so2",
+                    "name":"any haga 2 Tamer",
+                    "price":2
+                },
+                {
+                    "id":"so3",
+                    "name":"any haga 3 Tamer",
+                    "price":2
+                }
+            ]
+        },
+        {
+            "id":"a2",
+            "name":"B7bk Ana Awy",
+            "songs":[
+                {
+                    "id":"so4",
+                    "name":"any haga 1 Tamer",
+                    "price":2
+                },
+                {
+                    "id":"so5",
+                    "name":"any haga 2 Tamer",
+                    "price":2
+                }
+            ]
+        },
+        {
+            "id":"a3",
+            "name":"Fe 3shq Elbanat",
+            "songs":[
+                {
+                    "id":"so6",
+                    "name":"any haga 1 Mounier",
+                    "price":3
+                },
+                {
+                    "id":"so7",
+                    "name":"any haga 2 Mounier",
+                    "price":3
+                },
+                {
+                    "id":"so8",
+                    "name":"any haga 3 Mounier",
+                    "price":3
+                }
+            ]
+        },
+        {
+            "id":"a4",
+            "name":"elneel",
+            "songs":[
+                {
+                    "id":"so9",
+                    "name":"any haga 1 Mounier",
+                    "price":3
+                },
+                {
+                    "id":"so10",
+                    "name":"any haga 2 Mounier",
+                    "price":3
+                },
+                {
+                    "id":"so11",
+                    "name":"any haga 3 Mounier",
+                    "price":3
+                },
+                {
+                    "id":"so12",
+                    "name":"any haga 4 Mounier",
+                    "price":3
+                }
+            ]
+        },
+        {
+            "id":"a5",
+            "name":"luxor gammela",
+            "songs":[
+                {
+                    "id":"so13",
+                    "name":"any haga 1 Mounier",
+                    "price":3
+                },
+                {
+                    "id":"so14",
+                    "name":"any haga 2 Mounier",
+                    "price":3
+                }
+            ]
+        },
+        {
+            "id":"a6",
+            "name":"million years ago",
+            "songs":[
+                {
+                    "id":"so15",
+                    "name":"any haga 1 Adele",
+                    "price":5
+                },
+                {
+                    "id":"so16",
+                    "name":"any haga 2 Adele",
+                    "price":5
+                },
+                {
+                    "id":"so17",
+                    "name":"any haga 3 Adele",
+                    "price":5
+                }
+            ]
+        },
+        {
+            "id":"a7",
+            "name":"Hello",
+            "songs":[
+                {
+                    "id":"so18",
+                    "name":"any haga 1 Adele",
+                    "price":5
+                },
+                {
+                    "id":"so19",
+                    "name":"any haga 2 Adele",
+                    "price":5
+                }
+            ]
+        }
+
+    ]
+}
