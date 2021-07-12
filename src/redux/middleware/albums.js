@@ -7,7 +7,7 @@ function* get_albums_saga(action){
     yield put(set_loading_albums(true));
     let res= yield axios.get(`http://localhost:8000/AlbumsInfo?${action.payload.query}`);
     yield put(set_albums(res.data));
-    yield put(clear_selected_albums(res.data.lenght));
+    yield put(clear_selected_albums());
     yield put(set_loading_albums(false));
 }
 

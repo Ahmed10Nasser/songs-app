@@ -28,7 +28,7 @@ export default function albums(albums=defaultAlbums, action){
             });
         case CLEAR_SELECTED_ALBUMS:
             return produce(albums, newAlbums=>{
-                newAlbums.selected=new Array(action.payload.len).fill(false);
+                newAlbums.selected=[];
             });
         default:
             return albums;

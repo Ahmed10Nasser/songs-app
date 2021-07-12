@@ -51,11 +51,8 @@ export function set_changing_selected_albums(isSelectionChanged){
     }
 }
 
-export function clear_selected_albums(len){
+export function clear_selected_albums(){
     return{
-        type: CLEAR_SELECTED_ALBUMS,
-        payload:{
-            len: len
-        }
+        type: CLEAR_SELECTED_ALBUMS
     }
 }
