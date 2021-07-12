@@ -1,10 +1,11 @@
 import produce from "immer";
-import { SET_SELECTED_SINGERS, SET_LOADING_SINGERS, SET_SINGERS } from "../actions/singers";
+import { SET_SELECTED_SINGERS, SET_LOADING_SINGERS, SET_SINGERS, SET_CHANGING_SELECTED_SINGERS } from "../actions/singers";
 
 const defaultSingers={
     isLoading: false,
     values:[],
-    selected:[]
+    selected:[],
+    isSelectionChanged: false
 }
 
 export default function singers(singers=defaultSingers, action){
@@ -20,6 +21,10 @@ export default function singers(singers=defaultSingers, action){
         case SET_SELECTED_SINGERS:
             return produce(singers, newSingers=>{
                 newSingers.selected[action.payload.index]=action.payload.value;
+            });
+        case SET_CHANGING_SELECTED_SINGERS:
+            return produce(singers, newSingers=>{
+                newSingers.isSelectionChanged=action.payload.isSelectionChanged;
             });
         default:
             return singers;

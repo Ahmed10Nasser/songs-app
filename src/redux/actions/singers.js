@@ -2,6 +2,7 @@ export const SET_LOADING_SINGERS="set_loading_singers";
 export const GET_SINGERS="get_singers";
 export const SET_SINGERS="set_singers";
 export const SET_SELECTED_SINGERS="set_selected_singers"
+export const SET_CHANGING_SELECTED_SINGERS="set_changing_selected_singers";
 
 export function set_loading_singers(isLoading){
     return{
@@ -33,6 +34,15 @@ export function set_selected_singers(index,value){
         payload:{
             index: index,
             value: value
+        }
+    }
+}
+
+export function set_changing_selected_singers(isSelectionChanged){
+    return{
+        type: SET_CHANGING_SELECTED_SINGERS,
+        payload:{
+            isSelectionChanged: isSelectionChanged
         }
     }
 }

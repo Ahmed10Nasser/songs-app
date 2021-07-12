@@ -10,6 +10,6 @@ function* get_singers_saga(action){
     yield put(set_loading_singers(false));
 }
 
-export default function* watchForSingersAction(){
+export default function* watchForSingersActionds(){
     yield takeEvery(GET_SINGERS, get_singers_saga);
 }
