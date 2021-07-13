@@ -37,12 +37,9 @@ const Amount = () => {
                     });
                 });
                 break;
-            case 4:
+            default:
                 songsCount=state.generalInfo.songsCount;
                 amount=state.generalInfo.amount;
-                break;
-            default:
-                break;
         }
         dispatch(set_count(songsCount));
         dispatch(set_amount(amount));

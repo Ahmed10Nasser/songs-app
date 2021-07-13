@@ -3,6 +3,7 @@ import { next_page, prev_page } from "../redux/actions/generalInfo";
 import Albums from "./Albums";
 import Amount from "./Amount";
 import Form from "./Form";
+import Receipt from "./Receipt";
 import Singers from "./Singers";
 import Songs from "./Songs";
 
@@ -31,6 +32,7 @@ const Home = () => {
                     {currentPage===2 && <Albums></Albums>}
                     {currentPage===3 && <Songs></Songs>}
                     {currentPage===4 && <Form></Form>}
+                    {currentPage===5 && <Receipt></Receipt>}
                 </div>
                 <div className="col-3">
                     <Amount></Amount>

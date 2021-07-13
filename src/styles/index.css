@@ -52,3 +52,80 @@ li:not(:last-child):after{
     margin: 20px;
     text-align: center;
 }
+
+
+.receipt {
+    font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif;
+    text-align: center;
+    color: #777;
+}
+
+
+
+
+
+.receipt .invoice-box {
+    max-width: 800px;
+    margin: auto;
+    padding: 30px;
+    border: 1px solid #eee;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    font-size: 16px;
+    line-height: 24px;
+    font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif;
+    color: #555;
+}
+
+.receipt .invoice-box table {
+    width: 100%;
+    line-height: inherit;
+    text-align: left;
+    border-collapse: collapse;
+}
+
+.receipt .invoice-box table td {
+    padding: 5px;
+    vertical-align: top;
+}
+
+.receipt .information .bold{
+    font-weight: bold;
+}
+.receipt .invoice-box table tr td:nth-child(3) {
+    text-align: right;
+}
+
+.receipt .invoice-box table tr.top table td {
+    padding-bottom: 20px;
+}
+
+.receipt .invoice-box table tr.top table td.title {
+    font-size: 45px;
+    line-height: 45px;
+    color: #333;
+}
+
+.receipt .invoice-box table tr.information table td {
+    padding-bottom: 40px;
+}
+
+.receipt .invoice-box table tr.heading td {
+    background: #eee;
+    border-bottom: 1px solid #ddd;
+    font-weight: bold;
+}
+
+.receipt .invoice-box table tr.details td {
+    padding-bottom: 20px;
+}
+
+.receipt .invoice-box table tr.item td {
+    border-bottom: 1px solid #eee;
+}
+
+.receipt .invoice-box table tr.item.last td {
+    border-bottom: none;
+}
+.receipt .invoice-box table tr.total{
+    font-weight: bold;
+}
