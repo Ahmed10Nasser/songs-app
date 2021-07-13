@@ -48,13 +48,13 @@ const Amount = () => {
 
     return (
         <div className="container">
-            <div className="card">
+            <div className="card amount" >
                 <div className="card-body">
                 <h5 className="card-title">Count</h5>
                 <p className="card-text">{state.generalInfo.songsCount}</p>
                 </div>
             </div>
-            <div className="card">
+            <div className="card amount">
                 <div className="card-body">
                 <h5 className="card-title">Amount</h5>
                 <p className="card-text">{state.generalInfo.amount}</p>

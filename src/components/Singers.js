@@ -20,15 +20,15 @@ const Singers = () => {
             )
             :(
                 singers.values.map((singer,index)=>(
-                    <div className="singer" key={singer.id}>
+                    <div className="option" key={singer.id}>
                         <label htmlFor={singer.id}>
-                            <input type="checkbox" id={singer.id} value={singer.name}
+                            <input type="checkbox" className="checkbox" id={singer.id} value={singer.name}
                             required
                             checked={singers.selected[index] || false}                
                             onChange={(e)=>{dispatch(set_selected_singers(index,e.target.checked)); dispatch(set_changing_selected_singers(true));}}
                             />
                             <div className="content">
-                                <h3>{singer.name}</h3>
+                                <h4>{singer.name}</h4>
                             </div>
                         </label>
                     </div>

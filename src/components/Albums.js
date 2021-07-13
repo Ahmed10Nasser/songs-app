@@ -34,7 +34,7 @@ const Albums = () => {
                 )
                 :(
                     albums.values.map((album,index)=>(
-                        <div className="singer" key={album.id}>
+                        <div className="option" key={album.id}>
                             <label htmlFor={album.id}>
                                 <input type="checkbox" id={album.id} value={album.name}
                                 checked={albums.selected[index] || false}                

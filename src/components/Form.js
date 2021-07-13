@@ -40,7 +40,7 @@ const Form = () => {
                         onChange={(e)=>dispatch(set_phone(e.target.value))}
                     />
                 </div>
-                <button type="submit" className="btn btn-primary mt-3"
+                <button type="submit" className="btn mt-3 next"
                 >Submit</button>
             </form>
         </div>

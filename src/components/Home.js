@@ -27,20 +27,20 @@ const Home = () => {
             </div>
 
             <div className="row">
-                <div className="col-9">
+                <div className="col-8">
                     {currentPage===1 && <Singers></Singers>}
                     {currentPage===2 && <Albums></Albums>}
                     {currentPage===3 && <Songs></Songs>}
                     {currentPage===4 && <Form></Form>}
                     {currentPage===5 && <Receipt></Receipt>}
                 </div>
-                <div className="col-3">
+                <div className="col-4">
                     <Amount></Amount>
                 </div>
             </div>
             <div className="buttons">
-                {currentPage>1 && <button type="button" className="btn btn-secondary" onClick={()=>dispatch(prev_page())}>Prev</button>}
-                {currentPage<4 && <button type="button" className="btn btn-primary" onClick={()=>dispatch(next_page())}>Next</button>}
+                {currentPage>1 && <button type="button" className="btn prev" onClick={()=>dispatch(prev_page())}>Previous</button>}
+                {currentPage<4 && <button type="button" className="btn next" onClick={()=>dispatch(next_page())}>Next</button>}
             </div>
         </div>
     );

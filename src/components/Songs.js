@@ -32,8 +32,8 @@ const Songs = () => {
                 )
                 :(
                     songs.values.map((album,albumIndex)=>(
-                        <div className="card bg-light mb-3" key={album.id}>
-                            <div className="card-header">{album.name}</div>
+                        <div className="card bg-transparent  mb-3" key={album.id}>
+                            <div className="card-header card-header-custom">{album.name}</div>
                             <div className="card-body">
                                 {album.songs.map((song,songIndex)=>(
                                     <div  key={song.id}>

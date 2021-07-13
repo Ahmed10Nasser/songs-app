@@ -1,12 +1,23 @@
+/*=================== General ==================*/
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-h2{
-    text-align: center;   
+body{
+    font-family: 'Open Sans', sans-serif;
 }
+
+/*=================== Main Heading ==================*/
+
+h2{
+    text-align: center; 
+    margin: 20px 0;
+}
+
+/*=================== Navigator ==================*/
 
 
 ul{
@@ -19,7 +30,7 @@ ul{
 ul li{
     font-weight: bolder;
     display: inline;
-    border: 2px #000 solid;
+    border: 2px #30d5d5 solid;
     border-radius: 50%;
     padding: 25px;
     position: relative;
@@ -33,25 +44,72 @@ li:not(:last-child):after{
     content: "";
     height: 5px;
     width: unset;
-    background-color: #000;
+    background-color:#17c0d6dc;
     position: absolute;
     width: 52px;
     top: 50%;
     left: 100%;
 }
 .selected{
-    background-color: aqua;
+    background-color: #30d5d559;
 }
-.singer{
+
+
+/*=================== Options ==================*/
+
+.option{
     padding: 20px;
-    border: 3px #3057d5 solid;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
     border-radius: 10px;
     margin: 20px;
 }
+.option:hover{
+    
+    border: 1px #17c0d6dc solid;
+}
+
+.option label{
+    position: relative;
+}
+
+.option .content{
+    padding-left: 25px;
+}
+
+/*=================== Amount ==================*/
+
+.amount{
+    width: 120px;
+    border: 2px #30d5d5 solid;
+    margin-top: 10px;
+}
+
+.card-header-custom{
+    background-color:#17c9d659;
+}
+
+
+/*=================== Buttons ==================*/
+
+button{
+    width: 100px;
+}
+
 .buttons{
     margin: 20px;
     text-align: center;
 }
+
+.next{
+    background-color: #00b3cadc;
+    color: #FFF;
+}
+.prev{
+    background-color: #0b7381dc;
+    color: #FFF;
+}
+
+/*=================== Receipt ==================*/
 
 
 .receipt {
@@ -59,10 +117,6 @@ li:not(:last-child):after{
     text-align: center;
     color: #777;
 }
-
-
-
-
 
 .receipt .invoice-box {
     max-width: 800px;
