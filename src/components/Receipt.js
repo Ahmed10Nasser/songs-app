@@ -1,5 +1,4 @@
 import { useSelector } from "react-redux";
-import { useHistory } from "react-router";
 
 const Receipt = () => {
 
