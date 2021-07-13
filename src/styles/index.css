@@ -48,3 +48,7 @@ li:not(:last-child):after{
     border-radius: 10px;
     margin: 20px;
 }
+.buttons{
+    margin: 20px;
+    text-align: center;
+}

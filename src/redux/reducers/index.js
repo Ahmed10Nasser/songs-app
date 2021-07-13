@@ -1,12 +1,14 @@
 import {combineReducers} from 'redux';
 import albums from './albums';
+import form from './form';
 import generalInfo from './generalInfo';
 import singers from './singers';
 import songs from './songs';
 
 export default combineReducers({
-    singers,
     generalInfo,
+    singers,
     albums,
-    songs
+    songs,
+    form
 });

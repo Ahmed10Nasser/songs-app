@@ -23,6 +23,7 @@ const Singers = () => {
                     <div className="singer" key={singer.id}>
                         <label htmlFor={singer.id}>
                             <input type="checkbox" id={singer.id} value={singer.name}
+                            required
                             checked={singers.selected[index] || false}                
                             onChange={(e)=>{dispatch(set_selected_singers(index,e.target.checked)); dispatch(set_changing_selected_singers(true));}}
                             />
